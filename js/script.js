@@ -14,12 +14,12 @@ var percentualeOld = prezzoKm * 40 / 100;
 var prezzoScontoOld = prezzoKm - percentualeOld;
 
 if (eta <= 20) {
-document.getElementById("young").innerHTML = "Il tuo biglietto costa " + prezzoScontoYoung+ "€";
+document.getElementById("msg-prezzo").innerHTML = "Il tuo biglietto costa " + prezzoScontoYoung+ "€";
 
 }
 else if (eta >= 65 ) {
-document.getElementById("young").innerHTML = "Il tuo biglietto costa " + prezzoScontoOld+ "€";
+document.getElementById("msg-prezzo").innerHTML = "Il tuo biglietto costa " + prezzoScontoOld+ "€";
 }
 else {
-  document.getElementById("young").innerHTML = "Il tuo biglietto costa " + prezzoKm + "€";
+  document.getElementById("msg-prezzo").innerHTML = "Il tuo biglietto costa " + prezzoKm + "€";
 }
