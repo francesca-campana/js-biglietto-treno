@@ -22,9 +22,10 @@ body {
   text-align: center;
   width: 400px;
   height: 200px;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(255, 255, 255, 0.5);
   display: flex;
   align-items: center;
-  color: white;
+  color: #151d1a;
   justify-content: center;
+  border-radius: 35px;
 }
