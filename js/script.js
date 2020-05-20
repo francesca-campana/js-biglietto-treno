@@ -12,7 +12,7 @@ var prezzoScontoYoung = prezzoKm - percentualeYoung;
 //Variabile prezzo sconto old
 var percentualeOld = prezzoKm * 40 / 100;
 var prezzoScontoOld = prezzoKm - percentualeOld;
-var eta
+
 
 if (eta < 18) {
 document.getElementById("msg-prezzo").innerHTML = "Il tuo biglietto costa " + prezzoScontoYoung+ "€";

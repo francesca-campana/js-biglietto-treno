@@ -3,22 +3,28 @@
   padding: 0;
   box-sizing: border-box;
 }
-.wrap {
-  width: 100%;
-  height: 100vh;
+body {
   background-image: url(../img/hogwarts-express-1280x720.png);
   background-repeat: no-repeat;
   background-repeat: no-repeat;
   background-size: cover;
+
+}
+
+.wrap {
+  width: 100%;
+  height: 100vh;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .biglietteria {
   text-align: center;
-  width: 300px;
+  width: 400px;
   height: 200px;
   background-color: rgba(0,0,0,0.5);
   display: flex;
   align-items: center;
   color: white;
+  justify-content: center;
 }
