@@ -14,19 +14,18 @@ var percentualeOld = prezzoKm * 40 / 100;
 var prezzoScontoOld = prezzoKm - percentualeOld;
 
 
-if ((eta = isNaN()) && (km = isNaN())) {
-  alert("Ops, i dati inseriti non sono corretti");
-
-
-} else {
+//if ( (eta === isNaN()) && (km === isNaN())) {
+//alert("Ops, i dati inseriti non sono corretti");
+//console.log(eta)
+//}
+//else {
   if (eta < 18) {
-  document.getElementById("msg-prezzo").innerHTML = "Ciao, hai meno di 18 anni, stai usufruendo dello sconto young, così il tuo biglietto costa " + prezzoScontoYoung+ "€, " + "invece di " + prezzoKm + "€";
-
+  document.getElementById("msg-prezzo").innerHTML = "Ciao, avendo meno di 18 anni, stai usufruendo dello sconto young, grazie al quale il tuo biglietto costa " + prezzoScontoYoung+ "€, " + "invece di " + prezzoKm + "€.";
   }
   else if (eta > 65 ) {
-  document.getElementById("msg-prezzo").innerHTML = "Ciao, hai più di 65 anni, stai usufruendo dello sconto old, così il tuo biglietto costa " + prezzoScontoOld + "€, " + "invece di " + prezzoKm + "€";
+  document.getElementById("msg-prezzo").innerHTML = "Ciao, avendo più di 65 anni, stai usufruendo dello sconto senior, grazie al quale il tuo biglietto costa " + prezzoScontoOld + "€, " + "invece di " + prezzoKm + "€.";
   }
   else {
-  document.getElementById("msg-prezzo").innerHTML = "Ciao, Il tuo biglietto costa " + prezzoKm + "€";
+  document.getElementById("msg-prezzo").innerHTML = "Ciao, Il tuo biglietto costa " + prezzoKm + "€.";
   }
-}
+//}
